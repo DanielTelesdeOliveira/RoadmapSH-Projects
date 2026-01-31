@@ -7,75 +7,76 @@
     <meta name="description" content="Basic HTML website">
     <meta name="keywords" content="HTML, CSS">
     <title>Html Basics</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../grid.css" />
+    <link rel="icon" href="../assets/icon.ico">
 </head>
 <body>
-    <header>
-        <nav aria-label="Menu navigation">
-            <ul>
-                <li>
-                    Home
-                </li>
+    <header class="cabeçalho">
+        <div class="menu">
+            <img src="../assets/logo.gif" alt="icon of the page"/>
 
-                <li>
-                    <a href="articles.html">Articles</a>
-                </li>
+            <nav aria-label="Menu navigation">
+                <ul>
+                    <li>
+                        Home
+                    </li>
 
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
+                    <li>
+                        <a href="articles.html">Articles</a>
+                    </li>
 
-                <li>
-                    <a href="projects.html">Projects</a>
-                </li>
-            </ul>
-        </nav>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
         <h1>Homepage of the project</h1>
-        <img src="#" alt="icon of the page"/>
+
         <h2>Initial landing page from the road map basic HTML website</h2> 
     </header>
 
-    <hr>
-
     <main>
-        <h2>Projects</h2>
-        <ul>
-            <li>
-            <a href="projects.html#library">Community Library System</a> 
-            </li>
+        <div class="content-container">
+            <div class="projects-container">
+                <h2>Projects</h2>
+                <ul>
+                    <li>
+                    <a href="projects.html#library">Community Library System</a> 
+                    </li>
 
-            <li>
-            <a href="projects.html#compiler">Compiler for a custom language</a> 
-            </li>
+                    <li>
+                    <a href="projects.html#compiler">Compiler for a custom language</a> 
+                    </li>
 
-        </ul>
+                </ul>
+            </div>
 
-        <h2>Education</h2>
-
-        <p>
-           I am currently an undergraduate student at the Pontifical Catholic University of São Paulo (PUC-SP).   
-        </p> 
-
-        <p>
-            And, during this moment a important mark was the classification to national finals for 
-            the SBC Programming Marathon, a Brazilian Programming Contest.
-        </p>
-        
-        <p> 
-            Courses that I took: 
-        </p>
-
-        <ul>
-                <li>Data Structures</li>
-                <li>Software Architecture</li>
-                <li>Compilers</li>
-                <li>Operational Systems</li>
-        </ul>
+            <div class="education-container">
+                    <h2>Education</h2>
+                    <p>
+                    I am currently an undergraduate student at the Pontifical Catholic University of São Paulo (PUC-SP).
+                    <span> And, during this moment an important mark was the classification to national finals for
+                    the SBC Programming Marathon, a Brazilian Programming Contest.</span>
+                    <span> Courses that I took:</span>
+                    </p>
+                    <ul class="education">
+                            <li>Data Structures</li>
+                            <li>Software Architecture</li>
+                            <li>Compilers</li>
+                            <li>Operational Systems</li>
+                    </ul>
+            </div>        
+        </div>
     </main>    
 
-    <hr>
-
-    <footer>
+    <footer class="rodape">
         <p>&copy All rights reserved 2026</p>    
     </footer>
 
