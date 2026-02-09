@@ -7,10 +7,13 @@
     <meta name="author" content="Daniel">
     <title>Projects | Html Basics</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/icon.ico">
 </head>
 <body>
-    <header>
-        <nav aria-label="Menu navigation">
+    <header class="header">
+        <img src="../assets/logo.gif" alt="icon of the page"/>
+        <div class="menu">
+            <nav aria-label="Menu navigation">
                 <ul>
                     <li>
                         <a href="index.html">Home</a>
@@ -28,67 +31,68 @@
                         Projects
                     </li>
                 </ul>
-        </nav>
+            </div>    
+         </nav>
 
 
         <h1>Projects - CS</h1>
         <h2>Some projects that I developed during my undergraduate in Computer Science</h2>
     </header>
-    <hr>
 
     <main>
-        <h2 id="library">Community Library System </h2>
-        <p>
-            Due to the current situation in Brazil, marked by a reduced number of libraries and,
-            consequently, limited access to books, my group and I developed a prototype of a
-            library management system for the Computer Science and Society course.
-        </p>
+        <div class="library">
+            <h2 id="library-project">Community Library System </h2>
+                <p>
+                    Due to the current situation in Brazil, marked by a reduced number of libraries and,
+                    consequently, limited access to books, my group and I developed a prototype of a
+                    library management system for the Computer Science and Society course.
+                </p>
 
-        <p>
-             The project aims to improve and simplify the management of these environments,
-            especially community libraries.
-        </p>
+                <p>
+                    The project aims to improve and simplify the management of these environments,
+                    especially community libraries.
+                </p>
 
-        <h3>Technologies</h3>
-        <p>
-            The project was mainly developed using Java, due to its robustness, along with the
-            Spring Boot framework, with the goal of learning the tool and developing a web
-            application—an area we had little prior experience with at the time.
-        </p>
+                <h3>Technologies</h3>
+                <p>
+                    The project was mainly developed using Java, due to its robustness, along with the
+                    Spring Boot framework, with the goal of learning the tool and developing a web
+                    application—an area we had little prior experience with at the time.
+                </p>
 
-        <p>    
-            In addition, MySQL was used as the database management system for local storage and
-            data queries.
-        </p>
+                <p>    
+                    In addition, MySQL was used as the database management system for local storage and
+                    data queries.
+                </p>
 
-        <img src="../assets/book_query.gif" alt="A simple query example of the system" />
+                <img src="../assets/book_query.gif" alt="A simple query example of the system" />
+        </div>
 
-        <h2 id="compiler">Compiler for a custom Language</h2>
-        <p>
-            During the Compiler course, I have the opportunity to develop a compiler for a new 
-            programming language created by my group and me.
-        </p>
+        <div class="compiler">
+            <h2 id="compiler-project">Compiler for a custom Language</h2>
+            <p>
+                During the Compiler course, I have the opportunity to develop a compiler for a new 
+                programming language created by my group and me.
+            </p>
 
-        <p>
-            The compiler covers the lexical and syntactic analysis phases. The parser was
-            implemented using the recursive descent technique, along with formal grammatical
-            structures to recognize and validate the language syntax.
-        </p>
+            <p>
+                The compiler covers the lexical and syntactic analysis phases. The parser was
+                implemented using the recursive descent technique, along with formal grammatical
+                structures to recognize and validate the language syntax.
+            </p>
 
-        <p>Below is an image representing its structure.</p>
+            <h3>Technologies</h3>
+            <p>
+                This project was implemented in Java, following the Object-Oriented Programming paradigm.
+            </p>
 
-        <img src="../assets/compiler_structure.png" alt="Diagram of the compiler structure, including the semantic parser" />
+            <p>Below is an image representing its structure.</p>
 
-        <h3>Technologies</h3>
-        <p>
-            This project was implemented in Java, following the Object-Oriented Programming paradigm.
-        </p>
-
+            <img src="../assets/compiler_structure.png" alt="Diagram of the compiler structure, including the semantic parser" />
+        </div>
     </main>
 
-    <hr>
-
-    <footer>
+    <footer class="footer">
         <p>&copy All rights reserved 2026</p>
     </footer>
     

@@ -8,36 +8,38 @@
     <title>Contacts | Html Basics</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/form.css">
+    <link rel="icon" href="../assets/icon.ico">
 </head>
 
 <body>
-    <header>
-        <nav aria-label="Menu navigation">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
+    <header class="header">
+        <img src="../assets/logo.gif" alt="icon of the page"/>
+        <div class="menu">
+            <nav aria-label="Menu navigation">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
 
-                    <li>
-                        <a href="articles.html">Articles</a>
-                    </li>
+                        <li>
+                            <a href="articles.html">Articles</a>
+                        </li>
 
-                    <li>
-                        Contact
-                    </li>
+                        <li>
+                            Contact
+                        </li>
 
-                    <li>
-                        <a href="projects.html">Projects</a>
-                    </li>
-                </ul>
-        </nav>
-
+                        <li>
+                            <a href="projects.html">Projects</a>
+                        </li>
+                    </ul>
+            </nav>
+        </div>
+        <h1>Contacts of the author</h1>
+        <h2>Some ways to message me </h2>
     </header>
 
     <main>    
-        <h1>Contacts of the author</h1>
-        <h2>Some ways to message me </h2>
-
         <h3>Send a message!</h3>
         <form action="#" method="post" class="forms">
             <div>
@@ -45,7 +47,7 @@
                 <input type="text" id="nome" placeholder="John Doe"/>
 
                 <label for="email">E-mail</label>
-                <input type="email" id="email" placeholder="John Doe"/>
+                <input type="email" id="email" placeholder="JohnDoe@email.com"/>
 
                 <label for="msg">Message</label>
                 <textarea id="msg" placeholder="Your message"></textarea>
@@ -56,25 +58,24 @@
 
 
         <h3>Or enter in contact with: </h3>
-        <ul>
-            <li> 
-                <a href="mailto:daniel@email.com" title="Email">daniel@email.com</a>
-            </li>    
+        <div class="contacts">
+            <ul>
+                <li> 
+                    <a href="mailto:daniel@email.com" title="Email">E-mail: daniel@email.com</a>
+                </li>    
 
-            <li>
-                <a href="tel:+550000000-000" title="Cellphone">Cellphone: +55 00 00000-000</a>
-            </li>
+                <li>
+                    <a href="tel:+550000000-000" title="Cellphone">Cellphone: +55 00 00000-000</a>
+                </li>
 
-            <li>
-                <a href="#" title="Linkedin">Linkedin: Daniel</a>
-            </li>
-        </ul>
-       
+                <li>
+                    <a href="#" title="Linkedin">Linkedin: Daniel</a>
+                </li>
+            </ul>
+        </div>
     </main>    
 
-    <hr>
-
-    <footer>
+    <footer class="footer">
         <p>&copy All rights reserved 2026</p>
     </footer>
     

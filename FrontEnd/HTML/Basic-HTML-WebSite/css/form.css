@@ -30,11 +30,15 @@ form div{
 .forms input,
 .forms textarea,
 .forms button{
- 
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: "Playwrite NZ Basic", cursive; 
+}
 
+
+.forms input,
+.forms textarea{
+    font-family: 'Helvetica', Arial, sans-serif;
 }
 
 .forms textarea{
