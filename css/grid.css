@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap');
+
+.content-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+    border: 2px solid black;
+    font-family: "Playwrite NZ Basic", cursive;
+}
+
+.projects-container,
+.education-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10px;
+    text-align: center;
+    font-size: large;
+}
+
+.projects-container{
+    grid-column: 1 / 2;
+    position: relative;
+}
+
+.education-container{
+    grid-column: 2 / 2;
+    border-left: 2px solid black;
+    padding: 15px;
+}
+
+.projects-container ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.projects-container li{
+    border: 1px solid black;
+    padding: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    width: 100%;
+}
+
+.projects-container ul li:first-child{
+    border-top: 0px;
+}
+
+.projects-container ul li:last-child{
+    border-bottom: 0px;
+}
+
+.projects-container a:hover{
+    text-decoration: none;
+}
+
+.education-container ul{
+    list-style-type: "-";
+    list-style-position: outside;
+    text-indent: 30px;
+}
+
+.education-container p,
+.education-container li{
+    max-width: 30ch;
+}
+
+span{
+    display:block;
+}
+
+span:last-child{
+    margin-top: 1em;
+}
