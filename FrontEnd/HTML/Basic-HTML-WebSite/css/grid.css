@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap');
 
+
 .content-container{
     display: grid;
     grid-template-columns: 2fr 2fr;
     gap: 20px;
     border: 2px solid black;
     font-family: "Playwrite NZ Basic", cursive;
+    margin-bottom: 50px;
 }
 
 .projects-container,
@@ -38,15 +40,9 @@
 }
 
 .projects-container li{
-    border: 1px solid black;
+    border-bottom: 2px solid black;
     padding: 10px;
-    border-left: 0px;
-    border-right: 0px;
     width: 100%;
-}
-
-.projects-container ul li:first-child{
-    border-top: 0px;
 }
 
 .projects-container ul li:last-child{
@@ -74,4 +70,47 @@ span{
 
 span:last-child{
     margin-top: 1em;
+}
+
+@media (max-width: 720px){
+    .content-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: small;
+        border: 2px solid black;
+    }
+
+    .projects-container li{
+        border-bottom: 2px solid black;
+        padding: 0px;
+        margin: 0px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        background-color: lightgray;
+    }
+
+    .projects-container ul li:last-child{
+        border-bottom: 2px solid black;
+    }
+
+    .projects-container ul li:first-child{
+        border-top: 2px solid black;
+    }
+
+    .education-container{
+        border-left: 0px;
+        align-items: flex-start;
+    }
+
+    .education-container h2{
+        align-self: center;
+    }
+
+    .education-container p,
+    .education-container ul{
+        max-width: 140ch;
+        text-align: left;
+    }
+
 }

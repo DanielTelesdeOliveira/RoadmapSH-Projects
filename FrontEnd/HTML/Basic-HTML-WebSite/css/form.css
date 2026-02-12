@@ -13,28 +13,23 @@ form{
     flex-direction: column;
 }
 
-form div{
-    display: flex;
-    flex-direction: column;
-}
-
-
 .forms label{
     padding: 10px;
     padding-left: 0;
     padding-bottom: 0px;
-    width: 90px;
     text-align: left;
 }
 
 .forms input,
 .forms textarea,
 .forms button{
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: "Playwrite NZ Basic", cursive; 
 }
 
+.forms button{
+    font-family: "Playwrite NZ Basic", cursive; 
+    border: 1px solid gray;
+}
 
 .forms input,
 .forms textarea{
@@ -50,12 +45,33 @@ form div{
     margin-top: 1em;
 }
 
-.forms input,
-.forms textarea{
-    border: 1px solid gray;
-}
-
 .forms input:focus,
 .forms textarea:focus{
     border-color: black;
+}
+
+
+@media (max-width: 720px){
+    form{
+        width: 80%;
+    }
+
+    .forms label{
+        font-size: 14px;
+    }
+
+    .forms textarea,
+    .forms input{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .forms textarea{
+        min-height: 120px;
+    }
+
+    .forms button{
+        width: 100%;
+        font-size: 16px;
+    }
 }

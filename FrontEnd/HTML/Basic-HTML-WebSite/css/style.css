@@ -9,19 +9,18 @@ p{
     padding-left: 25px;
 }
 
+
 h1,
 h2,
-h3,
-.header h1,
-.header h2{
+h3{
     text-align: center;
     font-family: "Playwrite NZ Basic", cursive;
 }
 
-img{
+.image-container{
     display: flex;
-    justify-self: center;
-    align-self: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu{
@@ -33,58 +32,48 @@ img{
     position: absolute;
     top: 30px;
     right: 0;
-  
-    /**display: flex;
-    justify-content: space-between;
-    align-items: center;**/
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
 }
 
 .header img{
-    justify-self: left;
+    align-self: flex-start;
     width: 150px;
     height: auto;
 }
 
 
-.header li{
-    margin-right: 10px;
-    font-size: large;
-}
-
-
-.header h1,
-.header h2{
-    font-family: 'Courier New', Courier, monospace;
-    justify-content: center;
-}
-
 .header h2{
     color: gray;
 }
-
-
 
 .menu ul{
     display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
-   
 }
 
 .menu ul li{
-    justify-self: right;
-    align-self: right;
+    padding-right: 5px;
+    font-size: large;
+}
+
+.menu li:after{
+    content: " / ";
+}
+
+.menu li:last-child::after{
+    content: "";
 }
 
 .menu a:hover{
     text-decoration: none;
 }
 
-.menu img{
-    width: 150px;
-    height: auto;
-}
 
 .footer p{
     text-align: center;
@@ -93,72 +82,74 @@ img{
     font-weight: bold;
 }
 
-.library,
-.compiler{
+.projects-details{
     display: flex;
     border: 2px solid black;
     flex-direction: column;
     max-width: 100ch;
     justify-self: center;
     align-self: center;
+    margin-bottom: 50px;
 }
 
-.library img,
-.compiler img{
+
+.projects-details img{
     padding-bottom: 20px;
     padding-top: 10px;
     height: 90%;
     width: 90%;
 }
 
-.library p,
-.compiler p{
+.projects-details p{
     padding-right: 10px;
 }
 
-.compiler{
-    margin-top: 50px;
-}
-
-.compiler img{
-    height: 100%;
+.projects-image-resize{
+    height: 40%;
     width: 95%;
 }
 
 .contacts{
     display: flex;
     justify-content: center;
-}
-
-
-.contacts ul{
-    list-style-type: disc;
-    list-style-position: outside;
+    align-items: center;
 }
 
 .contacts li{
     padding-bottom: 20px;
-    padding-right: 18px;
 }
 
 .contacts li:last-child{
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 
+
+.article-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
 
 .article-container{
     display: flex;
     flex-direction: column;
     border: 2px solid black;
-    border-bottom: 0;
     max-width: 85ch;
     margin: 0 auto;
+    margin-bottom: 0px;
+}
+
+.article-container:nth-of-type(n+2){
+    border-top: 0px;
+}
+
+.article-container:last-child{
+    margin-bottom: 30px;
 }
 
 .article-info{
     padding-bottom: auto;
 }
-
 
 .article-info p{
     margin: 0;
@@ -171,7 +162,6 @@ img{
 
 .source{
     font-weight: bold;
-    border-bottom: 2px solid black;
     padding-bottom: 15px;
 }
 
@@ -179,4 +169,67 @@ img{
     font-family: 'Roboto';
 }
 
+@media (max-width: 720px){
+    body{
+        background-color: white;
+        font-size: 16px;
+    }
 
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: small;
+    }
+
+    .header img{
+        align-self: center;
+        width: 120px;
+        height: 70px;
+        margin-bottom: 40px;
+    }
+
+    .menu{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        position: static;
+    }
+
+    .menu ul{
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu ul li{
+        padding-right: 5px;
+        font-size: medium;
+    }
+
+    .projects-details{
+        width: 90%;
+    }
+
+    .projects-details img{
+        height: 95%;
+        width: 95%;
+    }
+
+    .contacts li{
+        font-size: 16px;
+    }
+
+    .article-container{
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .article-container h2{
+        font-size: 16px;
+    }
+
+
+}
