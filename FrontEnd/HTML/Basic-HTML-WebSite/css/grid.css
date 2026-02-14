@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap');
+:root{
+    --border-color: black;
+    --media-project-container-color: lightgray;
+}
 
+body:has(#darkmode:checked){
+    --border-color: white;
+    --media-project-container-color: #444444;
+}
 
 .content-container{
     display: grid;
     grid-template-columns: 2fr 2fr;
     gap: 20px;
-    border: 2px solid black;
+    border: 2px solid var(--border-color);
     font-family: "Playwrite NZ Basic", cursive;
     margin-bottom: 50px;
 }
@@ -28,7 +36,7 @@
 
 .education-container{
     grid-column: 2 / 2;
-    border-left: 2px solid black;
+    border-left: 2px solid var(--border-color);
     padding: 15px;
 }
 
@@ -40,7 +48,7 @@
 }
 
 .projects-container li{
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--border-color);
     padding: 10px;
     width: 100%;
 }
@@ -78,24 +86,24 @@ span:last-child{
         flex-direction: column;
         gap: 20px;
         font-size: small;
-        border: 2px solid black;
+        border: 2px solid var(--border-color);
     }
 
     .projects-container li{
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid var(--border-color);
         padding: 0px;
         margin: 0px;
         padding-bottom: 10px;
         padding-top: 10px;
-        background-color: lightgray;
+        background-color: var(--media-project-container-color);
     }
 
     .projects-container ul li:last-child{
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid var(--border-color);
     }
 
     .projects-container ul li:first-child{
-        border-top: 2px solid black;
+        border-top: 2px solid var(--border-color);
     }
 
     .education-container{
